@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radu Studio</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◈</text></svg>">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            background: #000;
+            color: #fff;
+            font-family: 'Inter', -apple-system, sans-serif;
+            overflow: hidden;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .logo {
+            font-size: clamp(2.5rem, 8vw, 5rem);
+            font-weight: 300;
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
+            opacity: 0;
+            animation: fadeUp 1.2s ease forwards 0.3s;
+        }
+
+        .tagline {
+            font-size: clamp(0.75rem, 2vw, 1rem);
+            font-weight: 300;
+            letter-spacing: 0.25em;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.4);
+            margin-top: 1.5rem;
+            opacity: 0;
+            animation: fadeUp 1.2s ease forwards 0.6s;
+        }
+
+        .coming-soon {
+            font-size: clamp(0.7rem, 1.5vw, 0.85rem);
+            font-weight: 400;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.2);
+            margin-top: 4rem;
+            opacity: 0;
+            animation: fadeUp 1.2s ease forwards 0.9s;
+        }
+
+        .line {
+            width: 40px;
+            height: 1px;
+            background: rgba(255, 255, 255, 0.15);
+            margin-top: 2.5rem;
+            opacity: 0;
+            animation: fadeUp 1.2s ease forwards 0.15s;
+        }
+
+        .contact {
+            margin-top: 1.5rem;
+            opacity: 0;
+            animation: fadeUp 1.2s ease forwards 1.2s;
+        }
+
+        .contact a {
+            font-size: clamp(0.7rem, 1.5vw, 0.85rem);
+            font-weight: 300;
+            letter-spacing: 0.1em;
+            color: rgba(255, 255, 255, 0.25);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact a:hover {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-height: 500px) {
+            .coming-soon { margin-top: 2rem; }
+            .line { margin-top: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="line"></div>
+        <h1 class="logo">Radu Studio</h1>
+        <p class="tagline">Online Architecture</p>
+        <p class="coming-soon">Coming Soon</p>
+        <div class="contact">
+            <a href="mailto:hello@radustudio.com">hello@radustudio.com</a>
+        </div>
+    </div>
+</body>
+</html>
