@@ -1,0 +1,19 @@
+{
+  "name": "radu-studio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node src/build.mjs",
+    "dev": "node scripts/serve.mjs",
+    "test": "node scripts/check.mjs",
+    "test:browser": "node scripts/browser-test.cjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "playwright": "1.62.1",
+    "sharp": "0.34.5"
+  }
+}

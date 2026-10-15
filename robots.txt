@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /concepts/
+Sitemap: https://radu.studio/sitemap.xml

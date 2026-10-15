@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Radu Studio — Identity reference</title>
+    <style>
+      @font-face {
+        font-family: I;
+        src: url("../assets/fonts/instrument-sans-latin.woff2");
+      }
+      @font-face {
+        font-family: S;
+        src: url("../assets/fonts/instrument-serif-italic-latin.woff2");
+        font-style: italic;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: #eeeae1;
+        color: #25251f;
+        padding: 60px;
+        font-family: I, Arial;
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+        font: 12px monospace;
+        border-bottom: 1px solid #c8c3b8;
+        padding-bottom: 20px;
+      }
+      .identity {
+        display: grid;
+        grid-template-columns: 1.3fr 1fr;
+        align-items: center;
+        gap: 60px;
+        padding: 60px 0;
+      }
+      .identity img {
+        width: 100%;
+      }
+      .identity .word {
+        max-width: 620px;
+      }
+      .word p {
+        font-size: 22px;
+        line-height: 1.4;
+        margin-top: 50px;
+      }
+      .word h1 {
+        font-size: 64px;
+        line-height: 1;
+        letter-spacing: -3px;
+        font-weight: 500;
+      }
+      .word h1 em {
+        font-family: S;
+      }
+      .palette {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        border-top: 1px solid #c8c3b8;
+        padding-top: 25px;
+        gap: 18px;
+      }
+      .swatch div {
+        height: 90px;
+      }
+      .swatch p {
+        font: 11px monospace;
+        line-height: 1.8;
+      }
+      .typography {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        border-top: 1px solid #c8c3b8;
+        margin-top: 35px;
+        padding-top: 25px;
+        gap: 70px;
+      }
+      .typography small {
+        font: 11px monospace;
+      }
+      .typography p {
+        font-size: 35px;
+        line-height: 1.2;
+        margin-bottom: 10px;
+      }
+      .typography .serif {
+        font-family: S;
+        font-style: italic;
+        font-size: 45px;
+      }
+      footer {
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid #c8c3b8;
+        margin-top: 40px;
+        padding-top: 25px;
+        font: 11px monospace;
+      }
+      @media (max-width: 650px) {
+        body {
+          padding: 25px;
+        }
+        .identity {
+          grid-template-columns: 1fr;
+          gap: 0;
+        }
+        .word h1 {
+          font-size: 46px;
+        }
+        .palette {
+          gap: 7px;
+        }
+        .swatch p {
+          font-size: 8px;
+        }
+        .typography {
+          grid-template-columns: 1fr;
+          gap: 20px;
+        }
+        .typography p {
+          font-size: 27px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <span>RADU STUDIO / IDENTITY 01</span><span>ONLINE ARCHITECTURE</span>
+    </header>
+    <div class="identity">
+      <div class="word">
+        <img src="../assets/brand/radu-wordmark.svg" alt="Radu wordmark" />
+        <h1>Good websites.<br /><em>Great foundations.</em></h1>
+        <p>
+          Independent design & development.<br />Oulu, Finland. Working
+          everywhere.
+        </p>
+      </div>
+      <img
+        src="../assets/brand/radu-sculpture.svg"
+        alt="The modular sculptural R"
+      />
+    </div>
+    <div class="palette">
+      <div class="swatch">
+        <div style="background: #eeeae1; border: 1px solid #c8c3b8"></div>
+        <p>MINERAL PAPER<br />#EEEAE1</p>
+      </div>
+      <div class="swatch">
+        <div style="background: #25251f"></div>
+        <p>INK<br />#25251F</p>
+      </div>
+      <div class="swatch">
+        <div style="background: #df4929"></div>
+        <p>VERMILION<br />#DF4929</p>
+      </div>
+      <div class="swatch">
+        <div style="background: #30382f"></div>
+        <p>STUDIO GREEN<br />#30382F</p>
+      </div>
+      <div class="swatch">
+        <div style="background: #bac1a5"></div>
+        <p>SAGE<br />#BAC1A5</p>
+      </div>
+    </div>
+    <div class="typography">
+      <div>
+        <small>01 / INSTRUMENT SANS</small>
+        <p>Clear structure.<br />Thoughtful details.</p>
+        <small>400 REGULAR → 700 BOLD</small>
+      </div>
+      <div>
+        <small>02 / INSTRUMENT SERIF</small>
+        <p class="serif">Room for a little<br />more character.</p>
+        <small>ITALIC / SELECTED DISPLAY MOMENTS</small>
+      </div>
+    </div>
+    <footer>
+      <span>SIX PARTS. MANY POSSIBILITIES.</span><span>team@radu.studio</span>
+    </footer>
+  </body>
+</html>
