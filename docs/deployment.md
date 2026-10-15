@@ -21,7 +21,7 @@ npm test
 
 This writes generated root pages for the existing Pages setup and a clean static `dist/` artifact. No runtime packages, secrets or external integrations are required. Deploy **the contents of `dist/`** to a static host. The GitHub Pages branch-root route uses the generated root files and retained `CNAME`.
 
-For the separate Vercel review project: framework Other, build command `npm run build`, output `dist`, install command `npm ci --omit=dev`. A deployment with no production target is a review deployment. Do not link an ALEXMLD project or assign a production domain.
+For the separate Vercel review project: framework Other, build command `npm run build`, output `dist`, install command `npm ci --omit=dev`. Use the explicit API target `staging` for this review project. In this session the provider marked its first project deployment as production despite an omitted target; the confirmed review deployment uses `staging` and no custom domain. Do not link an ALEXMLD project or assign a production domain.
 
 ## Approved production release
 

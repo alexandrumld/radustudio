@@ -44,3 +44,5 @@ A backend delivery service was not available through configured credentials. The
 ## Production boundary
 
 The original `gh-pages` branch, custom domain and rollback commit remain unchanged. The review branch is `design/studio-2026`. Do not merge to `gh-pages` or connect the custom domain until the owner approves the release. See [deployment and rollback](docs/deployment.md).
+
+The finished review entry point, capture gallery, decisions and remaining boundaries are in [the review handoff](docs/review-handoff.md).

@@ -61,3 +61,7 @@ Replaced unsupported arrow glyphs with SVGs; corrected small-text contrast and a
 `npm test`: 9 HTML documents and 140 local references validated. `npm run test:browser`: 54 route/viewport and full journey checks passed. The separate technical review added 108 checks, including independent axe scans and realistic simulated-mobile Lighthouse. Scores are measured laboratory results, not self-assigned design ratings.
 
 Raw JSON reports and intermediate captures are supplied in the review-evidence archive rather than visitor-facing assets. No real-user, physical-device, Safari or Firefox testing is claimed. Mailbox receipt is not verified; the sender-reviewed email fallback is explicit.
+
+## Deployed verification
+
+The separate protected Vercel staging deployment was checked in real Chromium after publication. All seven content routes returned HTTP 200 and correct titles. No page errors occurred. The deployed enquiry form prepared the correctly addressed email draft and displayed the explicit unsent state. Desktop/mobile deployed captures and `deployed-results.json` are included in the handoff evidence. No outgoing email was sent.
