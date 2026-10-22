@@ -1,0 +1,81 @@
+{
+  "date": "2026-10-22T00:46:09.243Z",
+  "environment": "Local Chromium, Lighthouse simulated mobile defaults; not production field metrics",
+  "pages": {
+    "home": {
+      "url": "http://127.0.0.1:4173/",
+      "scores": {
+        "performance": 99,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100,
+        "agentic-browsing": 100
+      },
+      "audits": {
+        "first-contentful-paint": {
+          "value": 1053.5403,
+          "unit": "millisecond",
+          "display": "1.1 s"
+        },
+        "largest-contentful-paint": {
+          "value": 1953.5402999999997,
+          "unit": "millisecond",
+          "display": "2.0 s"
+        },
+        "total-blocking-time": {
+          "value": 4,
+          "unit": "millisecond",
+          "display": "0 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0,
+          "unit": "unitless",
+          "display": "0"
+        },
+        "speed-index": {
+          "value": 1053.5403,
+          "unit": "millisecond",
+          "display": "1.1 s"
+        }
+      }
+    },
+    "start": {
+      "url": "http://127.0.0.1:4173/start/",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100,
+        "agentic-browsing": 100
+      },
+      "audits": {
+        "first-contentful-paint": {
+          "value": 1204.2824,
+          "unit": "millisecond",
+          "display": "1.2 s"
+        },
+        "largest-contentful-paint": {
+          "value": 1654.2824,
+          "unit": "millisecond",
+          "display": "1.7 s"
+        },
+        "total-blocking-time": {
+          "value": 0,
+          "unit": "millisecond",
+          "display": "0 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0,
+          "unit": "unitless",
+          "display": "0"
+        },
+        "speed-index": {
+          "value": 1204.2824,
+          "unit": "millisecond",
+          "display": "1.2 s"
+        }
+      }
+    }
+  },
+  "lighthouseVersion": "13.5.0"
+}
