@@ -28,12 +28,19 @@
   });
   const composition = document.querySelector(".architecture");
   const compositions = ["Structure", "Expression", "Components"];
+  const insights = [
+    "Start with structure. Make the important things easy to find.",
+    "Add expression. Give the business a character of its own.",
+    "Build a system. Carry the same care into every component.",
+  ];
   document.querySelector(".rearrange")?.addEventListener("click", () => {
     const next =
       (Number(composition.dataset.composition) + 1) % compositions.length;
     composition.dataset.composition = String(next);
     composition.querySelector(".composition-name").textContent =
       `— ${compositions[next]}`;
+    composition.querySelector(".composition-insight").textContent =
+      insights[next];
     document.getElementById("composition-status").textContent =
       `Composition ${next + 1} of 3: ${compositions[next]}`;
   });
@@ -61,6 +68,24 @@
         observer.observe(el);
       });
   }
+  document.querySelectorAll(".demo-desk").forEach((desk) => {
+    desk.addEventListener("toggle", () => {
+      desk.querySelector(".desk-action").textContent =
+        `${desk.open ? "Close" : "Open"} the interactive design desk`;
+      const frame = desk.querySelector("iframe");
+      if (desk.open && !frame.getAttribute("src"))
+        frame.src = frame.dataset.src;
+    });
+    desk.querySelectorAll("[data-demo-size]").forEach((button) => {
+      button.addEventListener("click", () => {
+        desk.querySelector(".demo-stage").dataset.size =
+          button.dataset.demoSize;
+        desk.querySelectorAll("[data-demo-size]").forEach((control) => {
+          control.setAttribute("aria-pressed", String(control === button));
+        });
+      });
+    });
+  });
   const form = document.getElementById("enquiry-form");
   if (!form) return;
   const required = ["name", "email", "message"];
@@ -108,7 +133,7 @@
     const data = new FormData(form);
     const val = (key) => String(data.get(key) || "").trim();
     const subject = `Website enquiry — ${val("company") || val("name")}`;
-    draft = `Hello Radu,\n\n${val("message")}\n\nName: ${val("name")}\nEmail: ${val("email")}\nBusiness / website: ${val("company") || "Not specified"}\nInterested in: ${val("service")}\nBudget: ${val("budget")}\nIdeal launch: ${val("timeline") || "Flexible"}\n\nSent from the Radu Studio project enquiry.`;
+    draft = `Hello Radu,\n\n${val("message")}\n\nName: ${val("name")}\nEmail: ${val("email")}\nBusiness / website: ${val("company") || "Not specified"}\nInterested in: ${val("service")}\nBudget: ${val("budget") || "Not specified"}\nIdeal launch: ${val("timeline") || "Flexible"}\n\nSent from the Radu Studio project enquiry.`;
     document.getElementById("email-draft").href =
       `mailto:team@radu.studio?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(draft)}`;
     document.getElementById("draft-text").value =
@@ -123,6 +148,19 @@
         : "smooth",
       block: "center",
     });
+  });
+  document.getElementById("download-enquiry").addEventListener("click", () => {
+    const blob = new Blob([document.getElementById("draft-text").value], {
+      type: "text/plain;charset=utf-8",
+    });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = "radu-project-enquiry.txt";
+    document.body.append(link);
+    link.click();
+    link.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
   });
   document
     .getElementById("copy-enquiry")

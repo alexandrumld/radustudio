@@ -1,3 +1,5 @@
+> Historical October 15 handoff. PR #1 has since merged and is live. See the [October 22 review](review-2026-10-22/README.md) for current branch, publication state and launch checklist.
+
 # Radu Studio — finished review handoff
 
 ## Review the result
