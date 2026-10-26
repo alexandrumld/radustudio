@@ -1,0 +1,162 @@
+[
+  {
+    "name": "home",
+    "width": 320,
+    "scrollWidth": 320
+  },
+  {
+    "name": "enquiry",
+    "width": 320,
+    "scrollWidth": 320
+  },
+  {
+    "name": "retreat",
+    "width": 320,
+    "scrollWidth": 320
+  },
+  {
+    "name": "practice",
+    "width": 320,
+    "scrollWidth": 320
+  },
+  {
+    "name": "privacy",
+    "width": 320,
+    "scrollWidth": 320
+  },
+  {
+    "name": "retreat-concept",
+    "width": 320,
+    "scrollWidth": 320
+  },
+  {
+    "name": "practice-concept",
+    "width": 320,
+    "scrollWidth": 320
+  },
+  {
+    "name": "404",
+    "width": 320,
+    "scrollWidth": 320
+  },
+  {
+    "name": "home",
+    "width": 600,
+    "scrollWidth": 600
+  },
+  {
+    "name": "enquiry",
+    "width": 600,
+    "scrollWidth": 600
+  },
+  {
+    "name": "retreat",
+    "width": 600,
+    "scrollWidth": 600
+  },
+  {
+    "name": "practice",
+    "width": 600,
+    "scrollWidth": 600
+  },
+  {
+    "name": "privacy",
+    "width": 600,
+    "scrollWidth": 600
+  },
+  {
+    "name": "retreat-concept",
+    "width": 600,
+    "scrollWidth": 600
+  },
+  {
+    "name": "practice-concept",
+    "width": 600,
+    "scrollWidth": 600
+  },
+  {
+    "name": "404",
+    "width": 600,
+    "scrollWidth": 600
+  },
+  {
+    "name": "home",
+    "width": 1024,
+    "scrollWidth": 1024
+  },
+  {
+    "name": "enquiry",
+    "width": 1024,
+    "scrollWidth": 1024
+  },
+  {
+    "name": "retreat",
+    "width": 1024,
+    "scrollWidth": 1024
+  },
+  {
+    "name": "practice",
+    "width": 1024,
+    "scrollWidth": 1024
+  },
+  {
+    "name": "privacy",
+    "width": 1024,
+    "scrollWidth": 1024
+  },
+  {
+    "name": "retreat-concept",
+    "width": 1024,
+    "scrollWidth": 1024
+  },
+  {
+    "name": "practice-concept",
+    "width": 1024,
+    "scrollWidth": 1024
+  },
+  {
+    "name": "404",
+    "width": 1024,
+    "scrollWidth": 1024
+  },
+  {
+    "name": "home",
+    "width": 1920,
+    "scrollWidth": 1920
+  },
+  {
+    "name": "enquiry",
+    "width": 1920,
+    "scrollWidth": 1920
+  },
+  {
+    "name": "retreat",
+    "width": 1920,
+    "scrollWidth": 1920
+  },
+  {
+    "name": "practice",
+    "width": 1920,
+    "scrollWidth": 1920
+  },
+  {
+    "name": "privacy",
+    "width": 1920,
+    "scrollWidth": 1920
+  },
+  {
+    "name": "retreat-concept",
+    "width": 1920,
+    "scrollWidth": 1920
+  },
+  {
+    "name": "practice-concept",
+    "width": 1920,
+    "scrollWidth": 1920
+  },
+  {
+    "name": "404",
+    "width": 1920,
+    "scrollWidth": 1920
+  }
+]
