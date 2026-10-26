@@ -44,30 +44,7 @@
     document.getElementById("composition-status").textContent =
       `Composition ${next + 1} of 3: ${compositions[next]}`;
   });
-  if (
-    "IntersectionObserver" in window &&
-    !window.matchMedia("(prefers-reduced-motion: reduce)").matches
-  ) {
-    document.documentElement.classList.add("js-motion");
-    const observer = new IntersectionObserver(
-      (entries) =>
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("in-view");
-            observer.unobserve(entry.target);
-          }
-        }),
-      { threshold: 0.08 },
-    );
-    document
-      .querySelectorAll(
-        ".section-heading,.work-card,.services-intro,.service-list,.manifesto>h2,.studio-copy,.process-grid article,.faq-section>div,.contact-strip-content,.case-content>div",
-      )
-      .forEach((el) => {
-        el.classList.add("reveal");
-        observer.observe(el);
-      });
-  }
+  // Keep page content visible. Motion belongs to the identity control and direct feedback.
   document.querySelectorAll(".demo-desk").forEach((desk) => {
     desk.addEventListener("toggle", () => {
       desk.querySelector(".desk-action").textContent =

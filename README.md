@@ -1,6 +1,6 @@
 # Radu Studio — Online Architecture
 
-A complete static studio website. The October 22 refinement builds on merged PR #1 and is isolated on `design/radu-built-with-intent`. No frontend framework, server dependency, tracking, cookies, or external runtime font/image requests.
+A static studio website built around Online Architecture. The October 15 and October 22 designs are merged in PRs #1 and #2. The October 26 review is isolated on `design/radu-proof-and-rhythm`. No frontend framework, server dependency, tracking, cookies, or external runtime font/image requests.
 
 ## Run and review
 
@@ -44,6 +44,6 @@ A backend delivery service was not available through configured credentials. The
 
 ## Production boundary
 
-As verified on 22 October 2026, GitHub Pages serves `gh-pages` at radu.studio and PR #1 is merged. The current review branch is `design/radu-built-with-intent`. Merging it into `gh-pages` will publish changes; owner approval is required. No deployment or DNS change was performed in this refinement.
+As verified on 26 October 2026, the live site matches the design in `gh-pages`, including merged PRs #1 and #2. The review began at `cdaf138`. The October 26 changes are isolated on `design/radu-proof-and-rhythm`; merging into `gh-pages` publishes them. This review does not deploy or change DNS.
 
-The current [review, screenshots, measurements and launch checklist](docs/review-2026-10-22/README.md) supersede the original October 15 handoff. The original docs remain as historical evidence.
+The current [art direction and commercial UX review](docs/review-2026-10-26/README.md) records the implementation, current browser evidence, and remaining limits. The [October 22 review](docs/review-2026-10-22/README.md) and older documents remain historical evidence.
